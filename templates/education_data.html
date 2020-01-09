@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>数据</title>
+   </head>
+ <body>
+	<table>
+		<tr>
+			<td>指标</td>
+			<td>2018</td>
+			<td>2017</td>
+			<td>2016</td>
+			<td>2015</td>
+			<td>2014</td>
+			<td>2013</td>
+			<td>2012</td>
+			<td>2011</td>
+			<td>2010</td>
+			<td>2009</td>
+		</tr>
+		{% for data in datas %}
+			<tr>
+				<td>{{data.name}}</td>
+				<td>{{data.2018}}</td>
+				<td>{{data.2017}}</td>
+				<td>{{data.2016}}</td>
+				<td>{{data.2015}}</td>
+				<td>{{data.2014}}</td>
+				<td>{{data.2013}}</td>
+				<td>{{data.2012}}</td>
+				<td>{{data.2011}}</td>
+				<td>{{data.2010}}</td>
+				<td>{{data.2009}}</td>
+	        </tr>
+        {% endfor %}
+	</table>
+ </body>
+</html>
